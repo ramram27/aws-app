@@ -1,0 +1,22 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+      
+    - name: Build the Docker image
+      run: docker build -t ramram/aws-app:latest .
+
+    - name: push Docker image
+      run: docker push ramram27/aws-app:latest
