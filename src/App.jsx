@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <div>
-        <h1>Mern stack batch</h1>
+        <h1>Mern stack batch 2026</h1>
        <h1>Hello,Rohit kumar</h1>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
